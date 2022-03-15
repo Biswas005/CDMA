@@ -73,13 +73,13 @@ function __init__()
 
     println("\n \n A: ",A, "\n B:", B, "\n \n codeA: " , codeA, "\n codeB: " , codeB," \n\n As:",  As," \n Bs:", Bs, " \n Cs:", Cs," \n \n a:", a, " \n b:", b, "\n \n")
 
-    if a>0
+    if a > 0
         println(" A: 1")
     else
         println(" A: 0")
     end
 
-    if b>0
+    if b > 0
         println(" B: 1")
     else
         println(" B: 0")
