@@ -40,35 +40,16 @@ function __init__()
     println(codeB)
 
     for i = 1:8
-        x = A * codeA[i]
-        append!( As, [x])
-
-        y = B * codeB[i]
-        append!(Bs, [y])
-
-        z = As[i] + Bs[i]
-        append!(Cs, [z])
-    end
-
-    println("As : ")
-    for i = 1:8
-        print( " ", As[i])
-    end
-
-    println("Bs : ")
-    for i = 1:8
-        print( " ", Bs[i])
-    end
-
-    println("\nCs : ")
-    for i = 1:8
-        print( " ", Cs[i])
-    end
-
-    for i = 1:8
+        append!(As, [A * codeA[i]])        
+        append!(Bs, [B * codeB[i]])
+        append!(Cs, [As[i] + Bs[i]])
         a = a + codeA[i] * Cs[i]
         b = b + codeB[i] * Cs[i]
     end
+
+    println("As : ", As)
+    println("Bs : ", Bs)
+    println("Cs : ", Cs)
 
     if a > 0
         println("\n\nA: 1")
