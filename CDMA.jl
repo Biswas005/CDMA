@@ -13,13 +13,13 @@ function __init__()
         A = -1
     end
 
-    print(" Enter DATA B : ")
+    print("Enter DATA B : ")
     B = parse(Int64, readline())
     if B == 0
         B = -1
     end
 
-    println(" Enter CodeA : ")
+    print("Enter CodeA : ")
     for i = 1:8
          ele = parse(Int64, readline())
          append!(codeA, [ele])
@@ -29,7 +29,7 @@ function __init__()
     end
     println(codeA)
 
-    println(" Enter CodeB : ")
+    print("Enter CodeB : ")
     for i = 1:8
         ele = parse(Int64, readline())
          append!(codeB, [ele])
@@ -50,17 +50,17 @@ function __init__()
         append!(Cs, [z])
     end
 
-    println(" As : ")
+    println("As : ")
     for i = 1:8
         print( " ", As[i])
     end
 
-    println(" Bs : ")
+    println("Bs : ")
     for i = 1:8
         print( " ", Bs[i])
     end
 
-    println("\n Cs : ")
+    println("\nCs : ")
     for i = 1:8
         print( " ", Cs[i])
     end
@@ -70,20 +70,20 @@ function __init__()
         b = b + codeB[i] * Cs[i]
     end
 
-
-    println("\n \n A: ",A, "\n B:", B, "\n \n codeA: " , codeA, "\n codeB: " , codeB," \n\n As:",  As," \n Bs:", Bs, " \n Cs:", Cs," \n \n a:", a, " \n b:", b, "\n \n")
-
     if a > 0
-        println(" A: 1")
+        println("\n\nA: 1")
     else
-        println(" A: 0")
+        println("\n\nA: 0")
     end
 
     if b > 0
-        println(" B: 1")
+        println("B: 1")
     else
-        println(" B: 0")
+        println("B: 0")
     end
+
+    println("\n \n codeA: " , codeA, "\n codeB: " , codeB," \n\n As:",  As," \n Bs:", Bs, " \n Cs:", Cs," \n \n a:", a, " \n b:", b, "\n \n")
+
 end
 
 __init__()
