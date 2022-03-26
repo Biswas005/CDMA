@@ -55,11 +55,8 @@ fn main() {
 
     for i in 0..8 {
         As.push(A*codea[i]);
-
         bs.push(B*codeb[i]);
-
         cs.push(As[i]+bs[i]);
-
         a = a + codea[i]*cs[i];
         b = b + codeb[i]*cs[i];
     }
