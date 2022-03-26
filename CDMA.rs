@@ -59,13 +59,11 @@ fn main() {
         bs.push(B*codeb[i]);
 
         cs.push(As[i]+bs[i]);
-    }
-    println!("As : {:?}, Bs: {:?}, Cs: {:?}", As, bs, cs);
- 
-    for i in 0..8 {
+
         a = a + codea[i]*cs[i];
         b = b + codeb[i]*cs[i];
     }
+    println!("CodeA : {:?}, CodeB: {:?}, As : {:?}, Bs: {:?}, Cs: {:?}", codea, codeb, As, bs, cs);
 
     if a > 0 {
         println!("\n\nA : 1");
@@ -81,4 +79,3 @@ fn main() {
         println!("B : 0");
     }
 }
-
