@@ -13,13 +13,13 @@ function __init__()
         A = -1
     end
 
-    print("Enter DATA B : ")
+    print("Enter data B : ")
     B = parse(Int64, readline())
     if B == 0
         B = -1
     end
 
-    print("Enter CodeA : ")
+    print("Enter codeA : ")
     for i = 1:8
          ele = parse(Int64, readline())
          append!(codeA, [ele])
@@ -29,7 +29,7 @@ function __init__()
     end
     println(codeA)
 
-    print("Enter CodeB : ")
+    print("Enter codeB : ")
     for i = 1:8
         ele = parse(Int64, readline())
          append!(codeB, [ele])
