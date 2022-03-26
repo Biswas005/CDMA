@@ -19,7 +19,7 @@ function __init__()
         B = -1
     end
 
-    print("Enter codeA : ")
+    println("Enter codeA : ")
     for i = 1:8
          ele = parse(Int64, readline())
          append!(codeA, [ele])
@@ -27,9 +27,8 @@ function __init__()
             codeA[i] = -1
          end
     end
-    println(codeA)
 
-    print("Enter codeB : ")
+    println("Enter codeB : ")
     for i = 1:8
         ele = parse(Int64, readline())
          append!(codeB, [ele])
@@ -37,7 +36,6 @@ function __init__()
             codeB[i] = -1
          end
     end
-    println(codeB)
 
     for i = 1:8
         append!(As, [A * codeA[i]])        
@@ -47,6 +45,8 @@ function __init__()
         b = b + codeB[i] * Cs[i]
     end
 
+    println("\n\nCodeA : ", codeA)
+    println("CodeB : ", codeB)
     println("As : ", As)
     println("Bs : ", Bs)
     println("Cs : ", Cs)
@@ -62,9 +62,6 @@ function __init__()
     else
         println("B: 0")
     end
-
-    println("\n \n codeA: " , codeA, "\n codeB: " , codeB," \n\n As:",  As," \n Bs:", Bs, " \n Cs:", Cs," \n \n a:", a, " \n b:", b, "\n \n")
-
 end
 
 __init__()
