@@ -47,20 +47,20 @@ function __init__()
 
     println("\n\nCodeA : ", codeA)
     println("CodeB : ", codeB)
-    println("As : ", As)
-    println("Bs : ", Bs)
-    println("Cs : ", Cs)
+    println("As    : ", As)
+    println("Bs    : ", Bs)
+    println("Cs    : ", Cs)
 
     if a > 0
-        println("\n\nA: 1")
+        println("\n\nA    : 1")
     else
-        println("\n\nA: 0")
+        println("\n\nA    : 0")
     end
 
     if b > 0
-        println("B: 1")
+        println("B    : 1")
     else
-        println("B: 0")
+        println("B    : 0")
     end
 end
 

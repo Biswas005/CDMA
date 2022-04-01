@@ -16,11 +16,11 @@ fn input() -> i32 {
 fn main() {
     let mut a = 0;
     let mut b = 0;
-    let mut codea:Vec<i32> = Vec::new();
-    let mut codeb:Vec<i32> = Vec::new();
-    let mut As:Vec<i32> = Vec::new();
-    let mut bs:Vec<i32> = Vec::new();
-    let mut cs:Vec<i32> = Vec::new();
+    let mut codea:Vec<i32> = Vec::with_capacity(8);
+    let mut codeb:Vec<i32> = Vec::with_capacity(8);
+    let mut As:Vec<i32> = Vec::with_capacity(8);
+    let mut bs:Vec<i32> = Vec::with_capacity(8);
+    let mut cs:Vec<i32> = Vec::with_capacity(8);
     println!("Enter data A : ");
     let mut A:i32 = input();
     if A == 0 {
